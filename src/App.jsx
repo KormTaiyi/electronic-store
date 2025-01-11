@@ -1,6 +1,9 @@
+import HeadCom from "./components/HeadCom"
+
 const App = () => {
   return (
-    <div>App
+    <div>
+      <HeadCom/>
     </div>
   )
 }

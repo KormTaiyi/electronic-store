@@ -1,0 +1,70 @@
+/* Header */
+
+.Navigation{
+    width: 100%;
+    background-color: #0673F0;
+}
+.navHead{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.navLogo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.toggle{
+    display: none;
+    color: white;
+    font-size: 20px;
+}
+.navHead input{
+    height: 40px;
+    width: 200px;
+    padding: 0 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+.navMenu{
+    width: 90%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navItem{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.navLink{
+    font-size: 16px;
+    color: white;
+    padding: 0.8rem 5px;
+}
+.navLink:hover{
+    text-decoration: underline;
+}
+.navLogin{
+    font-size: 16px;
+    color: white;
+    padding: 0.8rem 5px;
+    cursor: pointer;
+}
+.navIcon{
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+/* Footer */
+
