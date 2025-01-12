@@ -4,14 +4,17 @@ import { Link } from "react-router"
 import { FaShoppingBag ,FaBars } from "react-icons/fa";
 
 const HeadCom = () => {
+    const handleBar=()=>{
+        
+    }
     const handleInput=(e)=>{
 
     }
   return (
-    <div className="Navigation">
+    <header className="Navigation">
         <div className="navHead">
             <div className="navLogo">
-                <FaBars className="toggle"/>
+                <FaBars onClick={handleBar} className="toggle"/>
                 <img src={logo} alt="" />
             </div>
             <form action="">
@@ -26,14 +29,13 @@ const HeadCom = () => {
                 <li><Link to="" className="navLink">Audio & Video</Link></li>
                 <li><Link to="" className="navLink">Labtop</Link></li>
                 <li><Link to="" className="navLink">Smart watchs</Link></li>
-                <li><Link to="" className="navLink"></Link></li>
             </ul>
             <ul type="none" className="navItem">
                 <li className="navIcon"><FaShoppingBag/></li>
                 <li className="navLogin">Login</li>
             </ul>
         </div>
-    </div>
+    </header>
   )
 }
 
