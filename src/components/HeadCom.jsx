@@ -2,19 +2,19 @@ import "./style.css"
 import logo from "../assets/electronic-store-logo.svg"
 import { Link } from "react-router"
 import { FaShoppingBag ,FaBars } from "react-icons/fa";
+import { useState } from "react";
 
 const HeadCom = () => {
-    const handleBar=()=>{
-        
-    }
+    const [isOpen , setIsOpen] = useState(false);
     const handleInput=(e)=>{
 
     }
+
   return (
     <header className="Navigation">
         <div className="navHead">
             <div className="navLogo">
-                <FaBars onClick={handleBar} className="toggle"/>
+                <FaBars onClick={()=>{setIsOpen(!isOpen)}} className="toggle"/>
                 <img src={logo} alt="" />
             </div>
             <form action="">
@@ -23,7 +23,7 @@ const HeadCom = () => {
         </div>
         <hr />
         <div className="navMenu">
-            <ul type="none" className="navItem">
+            <ul type="none" className={isOpen ? "navItem active" : "navItem"} >
                 <li><Link to="" className="navLink">All products</Link></li>
                 <li><Link to="" className="navLink">Kitchen appliances</Link></li>
                 <li><Link to="" className="navLink">Audio & Video</Link></li>

@@ -98,7 +98,7 @@
 }
 @media (max-width: 768px){
     .choose_us{
-        margin-top: 0;
+        margin-top: 5px;
     }
     .choose-side{
         gap: 1rem;
