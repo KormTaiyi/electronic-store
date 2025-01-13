@@ -23,7 +23,7 @@ export function AddtoCard(){
 export function OutofStock(){
     return(
         <>
-            <p style={{fontSize: "16px", color:"red"}}>Out of stock</p>
+            <p style={{position:"absolute", left: "5px", top:"5px", fontSize: "16px", color:"red"}}>Out of stock</p>
         </>
     )
 }

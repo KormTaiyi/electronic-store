@@ -12,7 +12,7 @@ const ChooseUs = () => {
         AOS.init();
     }, [])
   return (
-    <div className="choose_us" data-aos="fade-up">
+    <div className="choose_us" data-aos="zoom-in" data-aos-duration="1000" >
         <div className="choose-side">
             <div className="choose-us-box">
                 <FaTruck className="choose-icon"/>
