@@ -1,10 +1,18 @@
 import "./HeroAndChoose.css"
 import { AiFillMessage} from "react-icons/ai";
+import { useEffect } from "react";
 import { FaArrowRotateLeft,FaCreditCard,FaTruck } from "react-icons/fa6";
+import AOS from 'aos';
+import 'aos/dist/aos.css';	
+
+
 
 const ChooseUs = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
   return (
-    <div className="choose_us">
+    <div className="choose_us" data-aos="fade-up">
         <div className="choose-side">
             <div className="choose-us-box">
                 <FaTruck className="choose-icon"/>

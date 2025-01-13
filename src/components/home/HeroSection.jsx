@@ -1,11 +1,12 @@
 import "./HeroAndChoose.css"
+import 'animate.css';
 import { ShopNow } from "../AllButton"
 import img from "../../assets/electronic-store-brand-logo-00.png"
 
 const HeroSection = () => {
   return (
     <div className="heroSection">
-       <div className="heroSection-box">
+       <div className="heroSection-box animate__animated animate__fadeInTopRight animate__slow">
             <div className="hero_card">
                 <img src={img} alt="" />
                 <h1>The best home entertainment system is here</h1>

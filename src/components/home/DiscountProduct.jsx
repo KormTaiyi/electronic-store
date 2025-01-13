@@ -8,7 +8,7 @@ import img5 from "../../assets/electronic-store-product-image-22-300x300.jpg"
 import img6 from "../../assets/electronic-store-product-image-36-300x300.jpg"
 import img7 from "../../assets/electronic-store-product-image-18-300x300.jpg"
 import img8 from "../../assets/electronic-store-product-image-19-300x300.jpg"
-import { AddtoCard } from "../AllButton"
+import { AddtoCard, OutofStock } from "../AllButton"
 
 const DiscountProduct = () => {
     const ProductList=[
@@ -19,6 +19,7 @@ const DiscountProduct = () => {
         oldPrice: 49.00,
         newPrice: 44.00,
         image: img1,
+        stock: 2
       },
       {
         id: 2,
@@ -27,6 +28,7 @@ const DiscountProduct = () => {
         oldPrice: 249.00,
         newPrice: 219.00,
         image: img2,
+        stock: 0
       },
       {
         id: 3,
@@ -35,6 +37,7 @@ const DiscountProduct = () => {
         oldPrice: 229.00,
         newPrice: 209.00,
         image: img3,
+        stock: 2
       },
       {
         id: 4,
@@ -43,6 +46,7 @@ const DiscountProduct = () => {
         oldPrice: 699.00,
         newPrice: 659.00,
         image: img4,
+        stock: 2
       },
       {
         id: 5,
@@ -51,6 +55,7 @@ const DiscountProduct = () => {
         oldPrice: 1099,
         newPrice: 999,
         image: img5,
+        stock: 0
       },
       {
         id: 6,
@@ -59,6 +64,7 @@ const DiscountProduct = () => {
         oldPrice: 1299,
         newPrice: 1199,
         image: img6,
+        stock: 2
       },
       {
         id: 7,
@@ -67,6 +73,7 @@ const DiscountProduct = () => {
         oldPrice: 1499,
         newPrice: 1399,
         image: img7,
+        stock: 2
       },
       {
         id: 8,
@@ -75,15 +82,16 @@ const DiscountProduct = () => {
         oldPrice: 1029,
         newPrice: 999,
         image: img8,
+        stock: 0
       },
     ]
   return (
     <section>
       <div className="productCategory">
         {
-          ProductList.map(({id,name,image,des,oldPrice,newPrice})=>(
+          ProductList.map(({id,name,image,des,oldPrice,newPrice,stock})=>(
             <div className="cardDiscount" key={id}>
-              <div className="hiddenIcon">{AddtoCard()}</div>
+              <div className="hiddenIcon">{stock>0 ? OutofStock()  : AddtoCard()}</div>
               <img src={image} alt="" />
               <div className="cardText">
                 <h1>{name}</h1>
