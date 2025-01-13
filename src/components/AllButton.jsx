@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 export function ShopNow(){
     return(
@@ -9,8 +10,12 @@ export function ShopNow(){
 }
 
 export function AddtoCard(){
+    const handleClick=()=>{
+        
+    }
     return(
         <>
+            <HiOutlineShoppingBag onClick={handleClick} style={{fontSize: "22px", cursor:"pointer"}}/>
         </>
     )
 }

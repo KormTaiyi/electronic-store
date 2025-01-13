@@ -8,6 +8,7 @@ import img5 from "../../assets/electronic-store-product-image-22-300x300.jpg"
 import img6 from "../../assets/electronic-store-product-image-36-300x300.jpg"
 import img7 from "../../assets/electronic-store-product-image-18-300x300.jpg"
 import img8 from "../../assets/electronic-store-product-image-19-300x300.jpg"
+import { AddtoCard } from "../AllButton"
 
 const DiscountProduct = () => {
     const ProductList=[
@@ -82,6 +83,7 @@ const DiscountProduct = () => {
         {
           ProductList.map(({id,name,image,des,oldPrice,newPrice})=>(
             <div className="cardDiscount" key={id}>
+              <div className="hiddenIcon">{AddtoCard()}</div>
               <img src={image} alt="" />
               <div className="cardText">
                 <h1>{name}</h1>
