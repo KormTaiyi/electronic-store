@@ -142,7 +142,7 @@ footer{
 }
 @media (max-width: 640px){
     .footer img{
-        width: 110px;
+        width: 130px;
     }
     .footer{
         flex-direction: column;
@@ -157,7 +157,7 @@ footer{
         gap: 0.5rem;
     }
     .footItem h1{
-        font-size: 22px;
+        font-size: 24px;
     }
     .footLink{
         font-size: 16px;
