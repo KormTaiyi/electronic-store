@@ -157,12 +157,12 @@ footer{
         gap: 0.5rem;
     }
     .footItem h1{
-        font-size: 20px;
+        font-size: 22px;
     }
     .footLink{
-        font-size: 14px;
+        font-size: 16px;
     }
     .footAdd{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
