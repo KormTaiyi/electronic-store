@@ -85,7 +85,7 @@
     }
     .navHead input{
         width: 150px;
-        font-size: 10px;
+        font-size: 12px;
         height: 30px;
     }
     .navMenu{
@@ -116,7 +116,7 @@
         padding: 1rem 5px;
     }
     .navLogo img{
-        width: 95px;
+        width: 90px;
     }
     .navLogo{
         gap: 0.3rem;
@@ -134,7 +134,7 @@
         font-size: 16px;
     }
     .navTop{
-        gap: 0.5rem;
+        gap: 0.4rem;
     }
 }
 

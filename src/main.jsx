@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { BrowserRouter ,Routes , Route } from 'react-router'
 import ContactPage from './pages/ContactPage.jsx'
+import ShowAllProduct from './pages/ShowAllProduct'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,8 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<App />}/>
         <Route path='/contact' element={<ContactPage/>}/>
-        {/* <Route path='' element={}/>
-        <Route path='*' element={}/> */}
+        <Route path='/product' element={<ShowAllProduct/>}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>,

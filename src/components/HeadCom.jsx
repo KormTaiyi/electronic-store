@@ -27,11 +27,12 @@ const HeadCom = () => {
         <hr />
         <div className="navMenu">
             <ul type="none" className={isOpen ? "navItem active" : "navItem"} >
-                <li><Link to="" className="navLink">All products</Link></li>
+                <li><Link to="/product" className="navLink">All products</Link></li>
                 <li><Link to="" className="navLink">Kitchen appliances</Link></li>
                 <li><Link to="" className="navLink">Audio & Video</Link></li>
                 <li><Link to="" className="navLink">Labtop</Link></li>
                 <li><Link to="" className="navLink">Smart watchs</Link></li>
+                <li><Link to="/contact" className="navLink">Contact us</Link></li>
             </ul>
         </div>
     </header>
