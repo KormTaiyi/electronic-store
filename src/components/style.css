@@ -113,7 +113,7 @@
 @media (max-width: 640px){
     .navHead{
         width: 100%;
-        padding: 1rem 2px;
+        padding: 1rem 5px;
     }
     .navLogo img{
         width: 95px;
@@ -122,8 +122,7 @@
         gap: 0.3rem;
     }
     .navHead input{
-        height: 25px;
-        width: 100px;
+        width: 110px;
     } 
     .navLogin{
         font-size: 12px;
@@ -132,10 +131,10 @@
         font-size: 18px;
     }
     .navIcon{
-        font-size: 14px;
+        font-size: 16px;
     }
     .navTop{
-        gap: 0 0.3rem;
+        gap: 0.5rem;
     }
 }
 
