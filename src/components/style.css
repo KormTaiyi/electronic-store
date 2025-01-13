@@ -141,9 +141,6 @@ footer{
     }
 }
 @media (max-width: 640px){
-    .footer img{
-        width: 130px;
-    }
     .footer{
         flex-direction: column;
         align-items: center;
