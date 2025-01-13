@@ -22,9 +22,14 @@
     color: white;
     font-size: 20px;
 }
+.navTop{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
 .navHead input{
     height: 40px;
-    width: 220px;
+    width: 200px;
     padding: 0 5px;
     font-size: 16px;
     border-radius: 5px;
@@ -33,15 +38,17 @@
 .navMenu{
     width: 90%;
     margin: auto;
-    padding: 5px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .navItem{
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: 10px 0;
+}
+.navItem li{
+    padding: 5px 0;
 }
 .navLink{
     font-size: 16px;
@@ -50,6 +57,7 @@
 }
 .navLink:hover{
     text-decoration: underline;
+    color: gainsboro;
 }
 .navLogin{
     font-size: 16px;
@@ -103,12 +111,32 @@
     }
 }
 @media (max-width: 640px){
+    .navHead{
+        width: 100%;
+        padding: 1rem 2px;
+    }
     .navLogo img{
-        width: 110px;
+        width: 95px;
+    }
+    .navLogo{
+        gap: 0.3rem;
     }
     .navHead input{
-        width: 120px;
-    }  
+        height: 25px;
+        width: 100px;
+    } 
+    .navLogin{
+        font-size: 12px;
+    }
+    .toggle{
+        font-size: 18px;
+    }
+    .navIcon{
+        font-size: 14px;
+    }
+    .navTop{
+        gap: 0 0.3rem;
+    }
 }
 
 

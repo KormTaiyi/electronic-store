@@ -9,7 +9,6 @@ const HeadCom = () => {
     const handleInput=(e)=>{
 
     }
-
   return (
     <header className="Navigation">
         <div className="navHead">
@@ -17,9 +16,13 @@ const HeadCom = () => {
                 <FaBars onClick={()=>{setIsOpen(!isOpen)}} className="toggle"/>
                 <img src={logo} alt="" />
             </div>
-            <form action="">
-                <input type="text" placeholder="Search product..." onChange={handleInput}/>
-            </form>
+            <div className="navTop">
+                <form action="">
+                    <input type="text" placeholder="Search product..." onChange={handleInput}/>
+                </form>
+                <FaShoppingBag className="navIcon"/>
+                <p className="navLogin">Login</p>
+            </div>
         </div>
         <hr />
         <div className="navMenu">
@@ -29,10 +32,6 @@ const HeadCom = () => {
                 <li><Link to="" className="navLink">Audio & Video</Link></li>
                 <li><Link to="" className="navLink">Labtop</Link></li>
                 <li><Link to="" className="navLink">Smart watchs</Link></li>
-            </ul>
-            <ul type="none" className="navItem">
-                <li className="navIcon"><FaShoppingBag/></li>
-                <li className="navLogin">Login</li>
             </ul>
         </div>
     </header>
