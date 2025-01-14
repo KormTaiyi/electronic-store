@@ -1,25 +1,23 @@
-import { Outlet } from "react-router"
-import FootCom from "../components/FootCom"
-import HeadCom from "../components/HeadCom"
+import { Outlet } from "react-router";
+import FootCom from "../components/FootCom";
+import HeadCom from "../components/HeadCom";
+import LeftSide from "../components/LeftSide";
 
 const MainLayoutProduct = () => {
   return (
     <div>
-        <HeadCom/>  
-        <div style={{display:"grid", gridColumn: "12"}}>
-            <div style={{}}>
-
-            </div>
-            <div style={{}}>
-                <Outlet/>
-            </div>
-            <div style={{}}>
-
-            </div>
+      <HeadCom />
+      <div style={{ display: "grid", gridTemplateColumns: "4fr 8fr"}}>
+        <div>
+          <LeftSide style={{}} />
         </div>
-        <FootCom/>
+        <div>
+          <Outlet />
+        </div>
+      </div>
+      <FootCom />
     </div>
-  )
-}
+  );
+};
 
-export default MainLayoutProduct
+export default MainLayoutProduct;
