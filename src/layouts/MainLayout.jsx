@@ -1,6 +1,6 @@
 import { Outlet } from "react-router"
-import HeadCom from "./HeadCom"
-import FootCom from "./FootCom"
+import FootCom from "../components/FootCom"
+import HeadCom from "../components/HeadCom"
 
 const MainLayout = () => {
   return (

@@ -1,24 +1,48 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
-import { BrowserRouter ,Routes , Route } from 'react-router'
+import { createBrowserRouter, RouterProvider } from 'react-router'
 import ContactPage from './pages/ContactPage.jsx'
-import ShowAllProduct from './pages/ShowAllProduct'
-import MainLayout from "./components/MainLayout"
+import MainLayout from './layouts/MainLayout.jsx'
+import HomePage from "./pages/HomePage"
+import ErrorPage from "./pages/ErrorPage"
+import ShowAllProduct from "./pages/ShowAllProduct"
+import MainLayoutProduct from './layouts/MainLayoutProduct.jsx'
 import ProductCategoryPage from './pages/ProductCategoryPage.jsx'
 
+const router=createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout/>,
+    children:[
+      {
+        path:"/",
+        element: <HomePage/>
+      },
+      {
+        path: "contact",
+        element: <ContactPage/>
+      },
+      {
+        path: "product",
+        element: <ShowAllProduct/>
+      },
+    ],
+    errorElement: <ErrorPage/>
+  },
+  {
+    path: "/",
+    element: <MainLayoutProduct/>,
+    children:[
+      {
+        path:"/product_type",
+        element: <ProductCategoryPage/>
+      }
+    ]
+  }
+]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route  path="/" element={<MainLayout/>}>
-          <Route index element={<App />}/>
-          <Route path='contact' element={<ContactPage/>}/>
-          <Route path='product' element={<ShowAllProduct/>}/>
-          <Route path='product_category' element={<ProductCategoryPage/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router}/>
   </StrictMode>,
 )
