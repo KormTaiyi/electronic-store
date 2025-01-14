@@ -14,7 +14,7 @@ const HeadCom = () => {
         <div className="navHead">
             <div className="navLogo">
                 <FaBars onClick={()=>{setIsOpen(!isOpen)}} className="toggle"/>
-                <img src={logo} alt="" />
+                <Link to="/"><img src={logo} alt="" /></Link>
             </div>
             <div className="navTop">
                 <form action="">

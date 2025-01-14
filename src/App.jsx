@@ -8,12 +8,12 @@ import DiscountProduct from "./components/home/DiscountProduct"
 const App = () => {
   return (
     <div style={{backgroundColor: "whitesmoke"}}>
-      <HeadCom/>
+      {/* <HeadCom/> */}
       <HeroSection/>
       <ChooseUs/>
       <ShowProductCategory/>
       <DiscountProduct/>
-      <FootCom/>
+      {/* <FootCom/> */}
     </div>
   )
 }
